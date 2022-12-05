@@ -1,0 +1,37 @@
+###
+GET http://localhost:8080/hello?email=town4u.com
+
+###
+POST http://localhost:8080/hello
+Content-Type: application/json
+
+{
+  "name": null,
+  "email" : "xxx@ktown4u.com"
+}
+
+###
+PUT http://localhost:8080/hello
+Content-Type: application/json
+
+{
+"name": null,
+"email" : "xxx@ktown4u.com"
+}
+
+###
+PATCH http://localhost:8080/hello
+Content-Type: application/json
+
+{
+  "name": null,
+  "email" : "xxx@ktown4u.com"
+}
+###
+DELETE http://localhost:8080/hello
+Content-Type: application/json
+
+{
+  "name": null,
+  "email" : "xxx@ktown4u.com"
+}

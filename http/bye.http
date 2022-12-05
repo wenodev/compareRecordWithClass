@@ -1,0 +1,37 @@
+###
+GET http://localhost:8080/bye?name=bts
+
+###
+POST http://localhost:8080/bye
+Content-Type: application/json
+
+{
+  "name": null,
+  "email" : "xxx@ktown4u.com"
+}
+
+###
+PUT http://localhost:8080/bye
+Content-Type: application/json
+
+{
+"name": null,
+"email" : "xxx@ktown4u.com"
+}
+
+###
+PATCH http://localhost:8080/bye
+Content-Type: application/json
+
+{
+  "name": null,
+  "email" : "xxx@ktown4u.com"
+}
+###
+DELETE http://localhost:8080/bye
+Content-Type: application/json
+
+{
+  "name": null,
+  "email" : "xxx@ktown4u.com"
+}
