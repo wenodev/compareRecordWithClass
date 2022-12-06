@@ -4,6 +4,7 @@ import com.example.dto.bts.Album;
 import com.example.dto.bts.KpopGroup;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -28,6 +29,7 @@ class ReadValueTest {
     @Test
     void classTest() {
         ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new ParameterNamesModule());
         File file = new File("src/main/resources/bts.json");
         KpopGroup bts;
         try {
